@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anasayfaFragment3">
+
+    <fragment
+        android:id="@+id/anasayfaFragment3"
+        android:name="com.example.mamamarket.fragment.AnasayfaFragment"
+        android:label="AnasayfaFragment" >
+        <action
+            android:id="@+id/detayaGecis"
+            app:destination="@id/urunDetayFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/urunDetayFragment2"
+        android:name="com.example.mamamarket.fragment.UrunDetayFragment"
+        android:label="UrunDetayFragment" >
+        <argument
+            android:name="urun"
+            app:argType="com.example.mamamarket.entity.Product" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/kisiDetayFragment"
+        android:name="com.example.mamamarket.fragment.KisiDetayFragment"
+        android:label="KisiDetayFragment" >
+        <argument
+            android:name="kisiDetayGetir"
+            app:argType="com.example.mamamarket.entity.Users" />
+    </fragment>
+    <fragment
+        android:id="@+id/kampanyalarFragment2"
+        android:name="com.example.mamamarket.fragment.KampanyalarFragment"
+        android:label="fragment_kampanyalar"
+        tools:layout="@layout/fragment_kampanyalar" />
+    <fragment
+        android:id="@+id/sepetFragment3"
+        android:name="com.example.mamamarket.fragment.SepetFragment"
+        android:label="fragment_sepet"
+        tools:layout="@layout/fragment_sepet" />
+</navigation>

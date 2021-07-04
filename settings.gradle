@@ -1,0 +1,2 @@
+rootProject.name = "MamaMarket"
+include ':app'

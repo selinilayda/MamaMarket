@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_activity_nav"
+    app:startDestination="@id/girisYapFragment">
+    <fragment
+        android:id="@+id/girisYapFragment"
+        android:name="com.example.mamamarket.fragment.GirisYapFragment"
+        android:label="GirisYapFragment" >
+        <action
+            android:id="@+id/action_girisYapFragment_to_kayitOlFragment"
+            app:destination="@id/kayitOlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitOlFragment"
+        android:name="com.example.mamamarket.fragment.KayitOlFragment"
+        android:label="KayitOlFragment" >
+        <action
+            android:id="@+id/action_kayitOlFragment_to_girisYapFragment"
+            app:destination="@id/girisYapFragment" />
+    </fragment>
+</navigation>
